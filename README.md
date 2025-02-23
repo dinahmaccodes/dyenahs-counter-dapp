@@ -46,5 +46,5 @@ npm run dev
 ```
 5. Open your browser and visit http://localhost:3000
 
-About Smart Contract
+#### About Smart Contract
 The smart contract is deployed on the Ethereum Sepolia testnet. You can find the contract details in the contract.ts file.
