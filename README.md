@@ -29,3 +29,22 @@ Check out the live demo: [https://dyenah-counter-dapp.vercel.app]()
 1. Clone the repository:
    ```bash
    git clone https://github.com/dinahmaccodes/dyenahs-counter-dapp.git
+
+2. Navigate to the project folder:
+
+ ```bash
+Copy
+cd dyenahs-counter-dapp
+```
+3. Install dependencies (if not in device)
+```bash
+npm install
+```
+4. Start the development server 
+```bash
+npm run dev
+```
+5. Open your browser and visit http://localhost:3000
+
+About Smart Contract
+The smart contract is deployed on the Ethereum Sepolia testnet. You can find the contract details in the contract.ts file.
