@@ -17,7 +17,7 @@ This is a decentralized application (DApp) built with **Next.js**, **Tailwind CS
 - **Deployment**: Vercel
 
 ## Live Demo
-Check out the live demo: [https://dyenah-counter-dapp.vercel.app]()
+Check out the live demo: [https://dyenah-counter-dapp.vercel.app](https://dyenahs-counter-dapp.vercel.app/)
 
 ## Getting Started
 
@@ -51,7 +51,7 @@ The smart contract is deployed on the Ethereum Sepolia testnet. You can find the
 You can also find the link to the contract [here](https://sepolia.etherscan.io/address/0x3570fc102acc9e711f333d52919ceadf422c6d59)
 
 #### Live Demo
-Check out the live demo: put link here
+Check out the live demo: https://dyenahs-counter-dapp.vercel.app/
 
 #### How It Works
 1. Connect Your Wallet: Use the Connect Wallet button to link your Ethereum wallet (e.g., MetaMask).
