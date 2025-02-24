@@ -42,10 +42,10 @@ const Page = () => {
           functionName: "increaseByOne",
         });
       }
-      alert("Count increased successfully!"); // Replace toast with alert
+      alert("Count increased successfully!");
       refetch(); // Refetch the count after the transaction
     } catch (err) {
-      alert("Transaction failed"); // Replace toast with alert
+      alert("Transaction failed");
       console.error(err);
     }
   };
@@ -57,10 +57,10 @@ const Page = () => {
         ...wagmiContractConfig,
         functionName: "decreaseByOne",
       });
-      alert("Count decreased successfully!"); // Replace toast with alert
+      alert("Count decreased successfully!");
       refetch(); // Refetch the count after the transaction
     } catch (err) {
-      alert("Transaction failed"); // Replace toast with alert
+      alert("Transaction failed");
       console.error(err);
     }
   };
@@ -72,17 +72,16 @@ const Page = () => {
         ...wagmiContractConfig,
         functionName: "resetCount",
       });
-      alert("Count reset successfully!"); // Replace toast with alert
+      alert("Count reset successfully!");
       refetch(); // Refetch the count after the transaction
     } catch (err) {
-      alert("Reset failed"); // Replace toast with alert
+      alert("Reset failed");
       console.error(err);
     }
   };
 
-  // Display the current count
   const handleGetCount = () => {
-    alert(`Current Count: ${count}`); // Replace toast with alert
+    alert(`Current Count: ${count}`);
   };
 
   if (isLoading) return <p>Loading...</p>;
@@ -93,17 +92,15 @@ const Page = () => {
       {/* Header */}
       <header className="flex justify-between items-center px-6 py-4 bg-green-900 shadow-md">
         <h1 className="text-2xl font-bold">Dyenah's Counter</h1>
-        {/* Remove the wrapper div and let RainbowKit handle the styling */}
+
         <ConnectButton />
       </header>
 
-      {/* Main Section */}
       <main className="flex flex-col items-center justify-center gap-8 py-20">
         <h2 className="text-4xl font-semibold">
           Current Count: {count?.toString()}
         </h2>
 
-        {/* Input Field */}
         <input
           type="number"
           value={inputValue}
@@ -112,9 +109,8 @@ const Page = () => {
           className="border px-4 py-2 rounded-lg text-black"
         />
 
-        {/* Buttons */}
         <div className="flex gap-4 flex-wrap justify-center">
-          {/* Increase Count */}
+          {/* For Increase Count */}
           <button
             onClick={handleIncrease}
             className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200"
@@ -122,7 +118,6 @@ const Page = () => {
             Increase Count
           </button>
 
-          {/* Decrease Count */}
           <button
             onClick={handleDecrease}
             className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200"
@@ -130,7 +125,6 @@ const Page = () => {
             Decrease Count
           </button>
 
-          {/* Reset Count */}
           <button
             onClick={handleReset}
             className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200"
@@ -138,7 +132,6 @@ const Page = () => {
             Reset Count
           </button>
 
-          {/* Get Count */}
           <button
             onClick={handleGetCount}
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200"
