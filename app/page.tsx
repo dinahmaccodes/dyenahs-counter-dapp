@@ -110,7 +110,6 @@ const Page = () => {
         />
 
         <div className="flex gap-4 flex-wrap justify-center">
-          {/* For Increase Count */}
           <button
             onClick={handleIncrease}
             className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200"
